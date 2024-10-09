@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffecd1;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff6f61;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h2 {
+            font-size: 2em;
+            color: #ffab73;
+            animation: fadeIn 3s ease-in-out;
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+            animation: fadeIn 4s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .balloons {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .balloon {
+            width: 80px;
+            height: 120px;
+            background-color: #ff6f61;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            position: relative;
+            margin: 0 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        .balloon:nth-child(2) {
+            background-color: #f7c5a8;
+            animation-delay: 1s;
+        }
+        .balloon:nth-child(3) {
+            background-color: #fbd1a2;
+            animation-delay: 2s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        .string {
+            width: 2px;
+            height: 50px;
+            background-color: #999;
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Happy Birthday, My Love! 🎉</h1>
+    <h2>You're the best thing that ever happened to me! 💖</h2>
+    <p>Here's to more birthdays, more laughs, and a lifetime of memories together! 🥂</p>
+
+    <div class="balloons">
+        <div class="balloon">
+            <div class="string"></div>
+        </div>
+        <div class="balloon">
+            <div class="string"></div>
+        </div>
+        <div class="balloon">
+            <div class="string"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
