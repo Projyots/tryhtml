@@ -3,95 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
+    <title\> Happy Birthday ALPANA!!!!</title>
     <style>
+        /* Basic styling */
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffecd1;
+            background-color: #f0f8ff;
             color: #333;
-            text-align: center;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
-        .container {
-            padding-top: 100px;
-        }
+        
+        /* Title styles */
         h1 {
             font-size: 3em;
-            color: #ff6f61;
-            animation: fadeIn 2s ease-in-out;
+            color: #ff6347;
+            margin-top: 30px;
+            animation: colorChange 4s infinite alternate;
         }
-        h2 {
-            font-size: 2em;
-            color: #ffab73;
-            animation: fadeIn 3s ease-in-out;
+
+        @keyframes colorChange {
+            from { color: #ff6347; }
+            to { color: #6a5acd; }
         }
-        p {
-            font-size: 1.2em;
-            color: #333;
-            animation: fadeIn 4s ease-in-out;
+
+        /* Marquee styles */
+        .marquee {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
         }
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+
+        /* Container for animated elements */
+        .content {
+            padding: 20px;
         }
-        .balloons {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
+
+        /* Bouncing image */
+        .bouncing-img {
+            width: 150px;
+            height: auto;
+            animation: bounce 2s infinite ease-in-out;
+            margin-top: 20px;
         }
-        .balloon {
-            width: 80px;
-            height: 120px;
-            background-color: #ff6f61;
-            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-            position: relative;
-            margin: 0 20px;
-            animation: float 3s ease-in-out infinite;
-        }
-        .balloon:nth-child(2) {
-            background-color: #f7c5a8;
-            animation-delay: 1s;
-        }
-        .balloon:nth-child(3) {
-            background-color: #fbd1a2;
-            animation-delay: 2s;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-20px); }
-            100% { transform: translateY(0); }
         }
-        .string {
-            width: 2px;
-            height: 50px;
-            background-color: #999;
-            position: absolute;
-            bottom: -50px;
-            left: 50%;
-            transform: translateX(-50%);
+
+        /* Button hover effect */
+        .fancy-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #6a5acd;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .fancy-button:hover {
+            background-color: #ff6347;
+            transform: scale(1.1);
+        }
+
+        /* Footer section */
+        footer {
+            margin-top: 40px;
+            background-color: #333;
+            color: #f0f8ff;
+            padding: 10px;
+            font-size: 1em;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+    <!-- Title -->
     <h1>Happy Birthday, My Love! 🎉</h1>
-    <h2>You're the best thing that ever happened to me! 💖</h2>
-    <p>Here's to more birthdays, more laughs, and a lifetime of memories together! 🥂</p>
 
-    <div class="balloons">
-        <div class="balloon">
-            <div class="string"></div>
-        </div>
-        <div class="balloon">
-            <div class="string"></div>
-        </div>
-        <div class="balloon">
-            <div class="string"></div>
-        </div>
+    <!-- Marquee for announcements or a fun message -->
+    <marquee class="marquee" behavior="alternate" scrollamount="10">
+        🎉💖💖💖💖💖 Special Announcement: Thanks for making my life life <3 💖💖💖💖💖! 🎉
+    </marquee>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <p>You're the best thing that ever happened to me! 💖 🌎</p>
+        
+        
+        <!-- Bouncing image -->
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" class="bouncing-img">
+
+        <!-- Interactive button -->
+        <button class="fancy-button" onclick="showMessage()">Click Me!</button>
+        
+        <!-- JavaScript for button interaction -->
+        <script>
+            function showMessage() {
+                alert("Thanks for existing! Have a wonderful day!");
+            }
+        </script>
     </div>
-</div>
+
+    <!-- Footer with additional marquee -->
+    <footer>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            🌟 Created with love, code, and a sprinkle of creativity! 🌟
+        </marquee>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
 
 </body>
 </html>
